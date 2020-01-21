@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculat_age" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2El-7i-jtD">
+                                <rect key="frame" x="153" y="748" width="108" height="40"/>
+                                <color key="backgroundColor" red="0.01704829745" green="0.1983332038" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T2p-RI-KPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="احسب ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcoulateAge" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSC-nC-rZp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWJ-5Q-XQx">
+                                <rect key="frame" x="20" y="194" width="374" height="494"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="MXE-Ik-x1j">
+                                        <rect key="frame" x="25" y="95" width="320" height="290"/>
+                                        <color key="backgroundColor" red="0.01704829745" green="0.1983332038" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="290" id="CUr-Rs-shX"/>
+                                            <constraint firstAttribute="height" constant="290" id="lti-yG-CBv"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الناتج  هيظهر  هنا " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6u-wR-KP9">
+                                        <rect key="frame" x="0.0" y="410" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="o3t-aw-NHd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختار يوم ميلادك من هنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvO-SW-5Zd">
+                                        <rect key="frame" x="60" y="15" width="254" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Dpc-jd-LlQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FvO-SW-5Zd" firstAttribute="leading" secondItem="EWJ-5Q-XQx" secondAttribute="leading" constant="60" id="1fe-Ba-kF4"/>
+                                    <constraint firstAttribute="height" constant="494" id="55o-FX-0o4"/>
+                                    <constraint firstAttribute="trailing" secondItem="MXE-Ik-x1j" secondAttribute="trailing" constant="29" id="6eg-nt-UAa"/>
+                                    <constraint firstItem="FvO-SW-5Zd" firstAttribute="top" secondItem="EWJ-5Q-XQx" secondAttribute="top" constant="15" id="8w4-oW-mpj"/>
+                                    <constraint firstItem="MXE-Ik-x1j" firstAttribute="top" secondItem="FvO-SW-5Zd" secondAttribute="bottom" constant="40" id="CpH-ko-ons"/>
+                                    <constraint firstItem="f6u-wR-KP9" firstAttribute="leading" secondItem="EWJ-5Q-XQx" secondAttribute="leading" id="TUA-0u-M2a"/>
+                                    <constraint firstItem="f6u-wR-KP9" firstAttribute="top" secondItem="MXE-Ik-x1j" secondAttribute="bottom" constant="25" id="awR-6C-fID"/>
+                                    <constraint firstAttribute="trailing" secondItem="FvO-SW-5Zd" secondAttribute="trailing" constant="60" id="c2H-VY-avh"/>
+                                    <constraint firstItem="MXE-Ik-x1j" firstAttribute="top" secondItem="FvO-SW-5Zd" secondAttribute="bottom" constant="40" id="kE4-sy-bx8"/>
+                                    <constraint firstItem="MXE-Ik-x1j" firstAttribute="top" secondItem="FvO-SW-5Zd" secondAttribute="bottom" constant="40" id="lIz-dD-8Ok"/>
+                                    <constraint firstItem="MXE-Ik-x1j" firstAttribute="leading" secondItem="EWJ-5Q-XQx" secondAttribute="leading" constant="25" id="ojC-V1-Nwj"/>
+                                    <constraint firstItem="f6u-wR-KP9" firstAttribute="centerX" secondItem="FvO-SW-5Zd" secondAttribute="centerX" id="weH-oD-fBd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تعا نحسب عايش من امتا ؟ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP4-KP-1mT">
+                                <rect key="frame" x="34" y="74" width="346" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="isW-gC-bwd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99910610909999997" green="0.14794158939999999" blue="0.068465732040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pP4-KP-1mT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="0et-4v-Ea4"/>
+                            <constraint firstItem="EWJ-5Q-XQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4yg-Ma-m8x"/>
+                            <constraint firstItem="2El-7i-jtD" firstAttribute="top" secondItem="EWJ-5Q-XQx" secondAttribute="bottom" constant="60" id="HWj-z7-uZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2El-7i-jtD" secondAttribute="trailing" constant="153" id="MMw-qd-o9d"/>
+                            <constraint firstItem="2El-7i-jtD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="O0L-bC-pOo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pP4-KP-1mT" secondAttribute="trailing" constant="34" id="Zjn-pa-A48"/>
+                            <constraint firstItem="pP4-KP-1mT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="cmK-8v-lTw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EWJ-5Q-XQx" secondAttribute="trailing" constant="20" id="ec5-1x-MDV"/>
+                            <constraint firstItem="EWJ-5Q-XQx" firstAttribute="top" secondItem="pP4-KP-1mT" secondAttribute="bottom" constant="60" id="m0r-hg-LQj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttnCalculat" destination="2El-7i-jtD" id="PCr-5Z-uPk"/>
+                        <outlet property="dataPicker" destination="MXE-Ik-x1j" id="i0m-pE-DOX"/>
+                        <outlet property="displyAge" destination="f6u-wR-KP9" id="uTd-4A-0Bn"/>
+                        <outlet property="gaiudLable" destination="FvO-SW-5Zd" id="1Kn-ra-54O"/>
+                        <outlet property="veiwPl" destination="EWJ-5Q-XQx" id="fxG-3O-b64"/>
+                        <outlet property="welcomeLable" destination="pP4-KP-1mT" id="k5L-6i-Xa2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
